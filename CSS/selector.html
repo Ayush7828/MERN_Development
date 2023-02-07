@@ -80,6 +80,23 @@
             color: white;
             border: none;
         }
+
+        /* adjacent sibling selector */
+        section+p {
+            color: blue;
+        }
+
+        /* Child Selectors */
+        div>p {
+            background-color: black;
+            color: aquamarine;
+            font-size: 1.5rem;
+        }
+
+        [target="_blank"] {
+            color: purple;
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -102,11 +119,22 @@
     <p id="paragraph-style">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, sequi!
     </p>
-    <p>
+    <p class="sub-heading-style">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
         assumenda commodi soluta? Dolorem omnis quo voluptates est provident
         inventore autem?
     </p>
+    <h3>adjacent sibling Selector</h3>
+    <section>
+        <p>Lorem, ipsum.</p>
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, accusantium?
+    </p>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati asperiores error distinctio incidunt modi
+            repellat laborum, iusto aliquam voluptates corporis.</p>
+    </div>
+    <a href="" target="_blank">Google</a>
 </body>
 
 </html>
