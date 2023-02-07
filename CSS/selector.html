@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+        /* Selectors in css 
+        5 types of selectors in css
+        1) element selector
+        2) class selector
+        3) Id Selectors
+        4)* universal selector
+        5) group selectors
+
+         */
+        /* Element Selector */
+        h2 {
+            color: red;
+        }
+
+        /* Class Selector */
+        .sub-heading-style {
+            background-color: pink;
+            color: black;
+        }
+
+        /* Id Selector */
+        #paragraph-style {
+            background-color: brown;
+            color: pink;
+        }
+
+        /* Group selector */
+        nav {
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: nones;
+            padding: 12px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 0.5em;
+            width: 60%;
+            margin-right: 1em;
+            border-radius: 20px;
+            border: 1px solid grey;
+        }
+
+        button {
+            background-color: pink;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+
+        button[type="submit"] {
+            padding: 0.5em 1em;
+            font-weight: bolder;
+            background-color: gray;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact us</a></li>
+            <form action="">
+                <input type="text" placeholder="Search..." />
+                <button>Submit</button>
+            </form>
+        </ul>
+    </nav>
+    <h2>Ayush Singh</h2>
+
+    <h3 class="sub-heading-style">Sub Heading Tushar</h3>
+    <p id="paragraph-style">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, sequi!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+        assumenda commodi soluta? Dolorem omnis quo voluptates est provident
+        inventore autem?
+    </p>
+</body>
+
+</html>
