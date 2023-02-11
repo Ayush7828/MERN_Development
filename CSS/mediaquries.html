@@ -6,10 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Quries</title>
+    <style>
+        body {
+            background-color: orange;
+
+        }
+
+        div {
+            font-size: x-large;
+            text-align: center;
+        }
+
+        div::after {
+            content: "Media Quries";
+        }
+
+        /* @media (min-width:900px) {
+            body {
+                background-color: pink;
+
+            }
+        } */
+
+        /* different device and media quries */
+        /* 1) extra small screen 600px */
+        @media (max-width:600px) {
+            body {
+                background-color: pink;
+
+            }
+
+            div::after {
+                content: "this is phone";
+            }
+        }
+
+        /* 2) small devices ,potrait, tablets ,large phones min-wdth:600px */
+        @media (min-width:600px) {
+            div::after {
+                content: "this is potrait ,tablets ,large phone";
+            }
+        }
+
+        /* 3) landscape tablets, max-width:768px */
+        @media (max-width:768px) {
+            div::after {
+                content: "this is landsacpe tablets";
+            }
+        }
+
+        /* 4) large device min-width:900px */
+
+        @media (min-width:900px) {
+            div::after {
+                content: "this is lage device";
+            }
+        }
+
+        /* 5)extra large  min-width:1200px */
+        @media (min-width:1200px) {
+            div::after {
+                content: "this is extra large desktop";
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+    <div></div>
 </body>
 
 </html>
