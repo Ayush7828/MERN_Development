@@ -2,14 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overflow and Z-index</title>
     <style>
         body {}
-
-
 
         p {
             color: black;
@@ -19,10 +17,10 @@
         .class1 {
             position: absolute;
             top: 0;
-            top: 1;
+
             height: 250px;
             width: 250px;
-            z-index: -1;
+            z-index: -2;
 
             background-color: pink;
         }
@@ -32,31 +30,31 @@
             width: 250px;
             position: absolute;
             background-color: aqua;
+            top: 0;
+            z-index: -1;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sunt beatae similique placeat non ut, quaerat
-            rem
-            fugit repellendus dolor reiciendis deserunt sequi! Nobis aspernatur provident id, velit eaque fugit omnis.
-            Temporibus itaque eos voluptatum alias saepe. Quia magnam mollitia iusto dolorem inventore, adipisci hic
-            fugit
-            dolor, quidem sed fuga? Illum dolor eos nisi, cum tenetur assumenda officia inventore earum ea eveniet
-            architecto perferendis modi quaerat dolores rerum nam, non velit porro magni, pariatur rem impedit
-            perspiciatis
-            beatae. Officiis quibusdam soluta doloremque molestias, quisquam aliquid voluptatum sint, sit illum numquam
-            consequuntur aut! Beatae quasi illum enim suscipit repudiandae, cum rerum?
-
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sunt
+            beatae similique placeat non ut, quaerat rem fugit repellendus dolor
+            reiciendis deserunt sequi! Nobis aspernatur provident id, velit eaque
+            fugit omnis. Temporibus itaque eos voluptatum alias saepe. Quia magnam
+            mollitia iusto dolorem inventore, adipisci hic fugit dolor, quidem sed
+            fuga? Illum dolor eos nisi, cum tenetur assumenda officia inventore
+            earum ea eveniet architecto perferendis modi quaerat dolores rerum nam,
+            non velit porro magni, pariatur rem impedit perspiciatis beatae.
+            Officiis quibusdam soluta doloremque molestias, quisquam aliquid
+            voluptatum sint, sit illum numquam consequuntur aut! Beatae quasi illum
+            enim suscipit repudiandae, cum rerum?
         </p>
     </div>
     <!-- Z-index -->
-    <div class="class1">
-
-    </div>
+    <div class="class1"></div>
     <div class="class2"></div>
-
 </body>
 
 </html>
