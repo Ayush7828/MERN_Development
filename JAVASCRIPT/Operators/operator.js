@@ -46,21 +46,35 @@
 // Conditional Statement
 
 
-let a=5;
-let b=5;
-let e='78';
-console.log(a==b);
+// let a=5;
+// let b=5;
+// let e='78';
+// console.log(a==b);
 
-let c=5;
-let d=7;
-console.log(c!=d);
-console.log(c!=b);
+// let c=5;
+// let d=7;
+// console.log(c!=d);
+// console.log(c!=b);
 
-console.log(a<b);
-console.log(a>b);
+// console.log(a<b);
+// console.log(a>b);
 
-console.log("Strict Operator"+a===e);
-console.log("Strict Operator"+a!==e);
+// console.log("Strict Operator"+a===e);
+// console.log("Strict Operator"+a!==e);
+
+
+// lOGICAL OPERATOR
+// ANd &&
+// Or ||
+// Not !
+// let age=20;
+// if(age>19 && age<40){
+//     console.log("You are eligble for driving");
+
+// }
+// else{
+//     console.log("You are not eligible for Driving")
+// }
 
 
 
