@@ -3,34 +3,59 @@
 
 const age = 19;
 if (age > 19) {
-    console.log("Yes you can drive the car");
+  console.log("Yes you can drive the car");
 } else {
-    console.log("You are not eligble for driving");
+  console.log("You are not eligble for driving");
 }
 const day = 2;
 if (day == 2) {
-    console.log("Monday");
+  console.log("Monday");
 } else if (day == 3) {
-    console.log("Tuesday");
+  console.log("Tuesday");
 }
 
 // Ternary Opertaor
 let a = 25;
 // let a=20;
 ans =
-    a > 20 ? "You are eligible for given vote" : "You are not eligible for vote";
+  a > 20 ? "You are eligible for given vote" : "You are not eligible for vote";
 console.log(ans);
 
 // Switch Case
 let ch = 2;
 switch (ch) {
-    case 1:
-        console.log("hELLO");
-        break;
-    case 2:
-        console.log("Tuesday");
+  case 1:
+    console.log("hELLO");
+    break;
+  case 2:
+    console.log("Tuesday");
 
-        break;
-    default:
-        console.log("hello My name is java script");
+    break;
+  default:
+    console.log("hello My name is java script");
+}
+
+let operations = "+";
+let first=10,second=45;
+switch (operations) {
+  case "+":
+    console.log("Addition",  first+ second);
+
+    break;
+  case "-":
+    console.log("Addition" + first - second);
+
+    break;
+  case "*":
+    console.log("Addition" +  first* second);
+
+    break;
+  case "/":
+    console.log("Addition" +  first/ second);
+
+    break;
+
+  default:
+    console.log("Hello");
+    break;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 2</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        // Add
+        let title = document.createElement("h1");
+        title.className = "heading";
+        title.style.fontSize = "4rem";
+        title.style.color = "purple";
+        // add content 
+        title.textContent = "GOOD MORNING JavaScript";
+        console.log(title);
+        document.body.appendChild(title);
+        // remove elemnt
+
+        let ul = document.querySelector("ul");
+        console.log(ul);
+        let list = document.querySelectorAll("li");
+        console.log(list);
+        // for of loop
+        for (lists of list) {
+            console.log(lists);
+            ul.removeChild(lists);
+        }
+    </script>
+</body>
+
+</html>

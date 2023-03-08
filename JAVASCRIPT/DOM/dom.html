@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1></h1>
+    <p id="one">Namaste JavaScript</p>
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+    <h4>Namaste</h4>
+    <h4>Hey</h4>
+    <h4>Holi</h4>
+    <h2 class="hola">Hello </h2>+
+    <h2 id="id1">Happly Hole</h2>
+
+    <!-- JavaScript -->
+    <script>
+        // Id
+        let var1 = document.getElementById('one');
+        console.log(var1);
+        // class
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2.innerText);
+        console.log(var2[1]);
+        var2[1].innerText = 'React';
+
+        // Tag Name
+        let var3 = document.getElementsByTagName('h4');
+        console.log(var3);
+        var3[1].innerText = "JavaScript";
+        var3[2].style.color = "red";
+
+
+        // QuerySelector
+        let var4 = document.querySelector(".hola");
+        console.log(var4);
+        // var4.className = "Java";
+        var4.classList = "hola hello java";
+        // attribute name and value
+        var4.setAttribute("id", "java");
+
+        let var5 = document.querySelector("#id1");
+        console.log(var5);
+    </script>
+</body>
+
+</html>

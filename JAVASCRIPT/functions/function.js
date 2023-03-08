@@ -2,37 +2,28 @@
 // 1. Function Declaration
 // 2. Function Expression
 // 3. Arrow Function
+// 4. Callback Function
 
-// Function Declaration
-// function nameOfFunction() {}
 
-function add() {
-  let a = 2,
-    b = 3;
 
-  console.log(a + b);
+// Parameter Function
+function add(a,b){
+    console.log(a+b);
 }
-add();
-function sum(a, b) {
-  return a + b;
+// NOT Parameter Funciton
+function greeting(){
+    console.log("Hello JavaScript");
 }
 
-console.log(sum(78, 45));
-
-function greeeting() {
-  console.log("Namaste");
-}
-greeeting();
-
-function multiple(a, b) {
-  console.log(a * b);
-}
-multiple(4, 5);
 // Arrow Function
-//  const nameOfFunction = () => {}
+let square=(num)=>{
+   console.log("Square of Number is "+num*num);
+}
 
-let myaddition = (a, b) => {
-  console.log("Namasete from Arrow Function");
-  return a + b;
-};
-console.log(myaddition(78, 12));
+let multiply=(x,y)=>{
+    return x*y;
+}
+console.log(multiply(4,7));
+greeting();
+add(2,7);
+square(5);
