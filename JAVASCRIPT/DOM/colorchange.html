@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Chmage</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 16px;
+            font-size: 20px;
+            border-radius: 25px;
+            background-color: #808080;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button">Press To change</button>
+    <script>
+        // 1234567890ABCSDEF
+        const btn = document.getElementById("button");
+        // arrow function
+        const randomcColor = () => {
+            let value = "0123456789ABCDEF";
+            let cons = "#";
+            for (let i = 0; i < 6; i++) {
+                cons = cons + value[Math.floor(Math.random() * 16)];
+            }
+            return cons;
+
+        }
+        console.log(randomcColor());
+
+        function changeColor() {
+            document.body.style.backgroundColor = randomcColor();
+        }
+        btn.addEventListener("click", changeColor);
+    </script>
+</body>
+
+</html>

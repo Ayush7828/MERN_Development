@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner </title>
+</head>
+
+<body>
+    <h1>Hello Ayush Happy Holi</h1>
+    <p id="js"></p>
+    <button onclick="hey()" id="btn">Submit</button>
+    <!-- <button ondblclick="hey()" id="btn">Submit</button> -->
+    <script>
+        // dblclick
+        // mouseenter
+        document.addEventListener("click", hello);
+        function hello() {
+            document.getElementById("js").innerText = "Good Afternoon";
+        }
+        function hey() {
+            document.getElementById("btn").innerText = "Namaste";
+            document.getElementById("btn").style.color = "purple";
+            document.getElementById("btn").style.fontSize = "2rem";
+            document.getElementById("btn").style.fontFamily = "poppins";
+            document.getElementById("btn").style.backgroundColor = "pink";
+            document.getElementById("btn").style.borderRadius = "15px";
+        }
+    </script>
+</body>
+
+</html>

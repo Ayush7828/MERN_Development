@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addititons</title>
+    <style>
+        .container {
+
+            display: block;
+            margin: 5px;
+            padding: 20px;
+
+
+        }
+
+        .container img {
+            float: right;
+            width: 500px;
+        }
+
+        .container input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <input type="text" id="first" class="input-style">
+
+        <select name="" id="ope">
+            <option value="+">+</option>
+            <option value="*">*</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="second" class="input-style">
+        <br>
+        <button onclick="cal()">Submit</button>
+        <br>
+        <input type="text" id="c" readonly="">
+        <img src="g.png" alt="coding">
+    </div>
+
+    <script>
+        function cal() {
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let c = a + b
+
+
+            document.getElementById("c").value = c;
+        }
+    </script>
+</body>
+
+</html>
